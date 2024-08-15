@@ -2,7 +2,7 @@
 % Please edit documentation in R/jsutil.R
 \name{hh}
 \alias{hh}
-\title{A function to print the first n rows and columns of the input.}
+\title{A function to print the first n rows and m columns of the input.}
 \usage{
 hh(x, n = 5, m = n)
 }
@@ -17,7 +17,7 @@ hh(x, n = 5, m = n)
 Return the input and print its dimensions.
 }
 \description{
-A function to print the first n rows and columns of the input.
+A function to print the first n rows and m columns of the input.
 }
 \examples{
 library(magrittr)

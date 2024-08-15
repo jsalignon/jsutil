@@ -25,7 +25,7 @@ plength <- function(x) print(length(x))
 #'  C = rnorm(10),
 #'  D = rnorm(10)
 #')
-# df1 = cbind(df, df) %T>% pncol
+#' df1 = cbind(df, df) %T>% pncol
 pncol <- function(x) print(ncol(x))
 
 #' A function to return an object and printing its number of rows.
@@ -41,7 +41,7 @@ pncol <- function(x) print(ncol(x))
 #'  C = rnorm(10),
 #'  D = rnorm(10)
 #')
-# df1 = rbind(df, df) %T>% pnrow
+#' df1 = rbind(df, df) %T>% pnrow
 pnrow <- function(x) print(nrow(x))
 
 #' A function to return an object and printing its dimensions.
@@ -57,14 +57,14 @@ pnrow <- function(x) print(nrow(x))
 #'  C = rnorm(10),
 #'  D = rnorm(10)
 #')
-# df1 = rbind(df, df) %T>% pdim
+#' df1 = rbind(df, df) %T>% pdim
 pdim <- function(x) print(dim(x))
 
 
 ##############################################################
 # printing the first or last n rows and columns of a dataframe
 
-#' A function to print the first n rows and columns of the input.
+#' A function to print the first n rows and m columns of the input.
 #'
 #' @param x A matrix or dataframe.
 #' @param n Number of rows to display.
@@ -84,7 +84,7 @@ hh      <- function(x, n = 5, m = n) {
 	print(x[1:min(n, nrow(x)), 1:min(m, ncol(x))])
 }
 
-#' A function to print the first n rows and columns of the input.
+#' A function to print the first n rows and m columns of the input.
 #'
 #' @param x A matrix or dataframe.
 #' @param n Number of rows to display.

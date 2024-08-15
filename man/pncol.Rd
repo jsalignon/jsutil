@@ -23,4 +23,5 @@ df <- data.frame(
  C = rnorm(10),
  D = rnorm(10)
 )
+df1 = cbind(df, df) \%T>\% pncol
 }
