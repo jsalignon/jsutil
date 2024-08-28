@@ -105,3 +105,18 @@ tt      <- function(x, n = 5, m = n) {
 	nc = ncol(x)
 	print(x[max(1, nr - n + 1):nr, max(1, nc - m + 1):nc])
 }
+
+
+
+##############################################################
+# printing the first or last n rows and columns of a dataframe
+
+#' A function to print the length of TRUE elements in a logical.
+#'
+#' @param x A vector or logicals.
+#' @return Returns the length of the elements which are TRUE in the input.
+#' @export
+#' @examples
+#' lw(c(TRUE, TRUE, FALSE, TRUE, FALSE))
+lw <- function(x) length(which(x))
+
