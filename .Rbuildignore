@@ -2,4 +2,4 @@
 ^\.gitignore$
 ^\.git$
 ^README\.md$
-^notes.txt$
+^notes.plain$

@@ -108,8 +108,8 @@ tt      <- function(x, n = 5, m = n) {
 
 
 
-##############################################################
-# printing the first or last n rows and columns of a dataframe
+########################
+# Other useful functions
 
 #' A function to print the length of TRUE elements in a logical.
 #'
@@ -119,4 +119,16 @@ tt      <- function(x, n = 5, m = n) {
 #' @examples
 #' lw(c(TRUE, TRUE, FALSE, TRUE, FALSE))
 lw <- function(x) length(which(x))
+
+
+#' A function to print a vector as a column.
+#'
+#' @param x A vector.
+#' @return Returns the input transposed twice.
+#' @export
+#' @importFrom magrittr %>%
+#' @examples
+#' library(magrittr)
+#' t2(1:10)
+t2 <- function(x) x %>% t %>% t
 
